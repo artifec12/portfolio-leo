@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import LoopingTypewriter from "../TypewriterEffect";
 import { Button } from "../ui/button";
-import { Check, ChevronRight, Copy, MapPin } from "lucide-react";
+import { Check, ChevronRight, Copy, ExternalLink, MapPin } from "lucide-react";
 import Image from "next/image";
 import { Mail, Phone } from "lucide-react";
 import { Separator } from "../ui/separator";
@@ -49,6 +49,15 @@ const About = ({ setActive }: any) => {
               and scalable but also elevate brand presence and drive measurable
               results.
             </span>
+          </div>
+          <div className="mt-3 flex items-center gap-4">
+            <a
+              href="/ashish-resume.pdf"
+              download
+              className="inline-flex text-sm items-center gap-2 px-5 py-2 bg-neutral-800 hover:bg-neutral-700 font-medium rounded-md transition-colors"
+            >
+              Download Resume <ExternalLink size={16} />
+            </a>
           </div>
         </section>
         {/* Tools and Techs*/}
@@ -115,13 +124,13 @@ const About = ({ setActive }: any) => {
           </div>
         </section>
         {/* Education Section */}
-        <section className="mx-auto pr-4">
+        {/* <section className="mx-auto pr-4">
           <header className="flex items-center justify-between pb-8">
             <h2 className="text-3xl font-bold font-sans">Education</h2>
           </header>
 
           <div className="space-y-4">
-            {/* Item */}
+        
             <div className="bg-neutral-900 rounded-lg p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
               <div>
                 <h3 className="text-lg font-semibold font-sans">
@@ -132,7 +141,6 @@ const About = ({ setActive }: any) => {
               <span className="text-sm text-neutral-500">2016 – 2018</span>
             </div>
 
-            {/* Item */}
             <div className="bg-neutral-900 rounded-lg p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
               <div>
                 <h3 className="text-lg font-semibold font-sans">
@@ -143,7 +151,7 @@ const About = ({ setActive }: any) => {
               <span className="text-sm text-neutral-500">2018 – 2021</span>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* Seduled a call */}
         <section className="rounded-lg border border-neutral-800 p-6 !pb-6">
           <header className="space-y-2 pb-8">
